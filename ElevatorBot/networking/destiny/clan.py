@@ -19,7 +19,6 @@ from Shared.networkingSchemas.destiny.profile import DestinyProfileModel
 
 @dataclasses.dataclass
 class DestinyClan(BaseBackendConnection):
-
     discord_guild: Guild
 
     discord_member: Member = dataclasses.field(init=False, default=None)

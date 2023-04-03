@@ -27,7 +27,6 @@ class MuteMe(BaseModule):
     )
     @default_user_option()
     async def mute_me(self, ctx: ElevatorInteractionContext, user: Member = None):
-
         # no mentioning others here smiley face
         if user:
             await ctx.send("I saw what you did there, that doesn't work here mate")

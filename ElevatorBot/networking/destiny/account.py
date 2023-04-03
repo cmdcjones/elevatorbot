@@ -49,7 +49,6 @@ from Shared.networkingSchemas.destiny import (
 
 @dataclasses.dataclass
 class DestinyAccount(BaseBackendConnection):
-
     discord_guild: Guild
 
     async def set_transmog(self, character_id: int):

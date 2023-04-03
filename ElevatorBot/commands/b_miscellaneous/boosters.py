@@ -12,7 +12,6 @@ class Boosters(BaseModule):
         dm_permission=False,
     )
     async def boosters(self, ctx: ElevatorInteractionContext):
-
         sorted_premium_subscribers: list[Member] = sorted(
             ctx.guild.premium_subscribers, key=lambda m: m.premium_since, reverse=True
         )

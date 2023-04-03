@@ -17,7 +17,6 @@ from Shared.networkingSchemas.destiny.roles import EarnedRoleModel, EarnedRolesM
 
 @dataclasses.dataclass
 class DestinyRoles(BaseBackendConnection):
-
     discord_guild: Optional[Guild]
 
     async def get(self) -> EarnedRolesModel:

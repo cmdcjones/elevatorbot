@@ -14,7 +14,6 @@ class FunFact(BaseModule):
         dm_permission=False,
     )
     async def fun_fact(self, ctx: ElevatorInteractionContext):
-
         url = "https://uselessfacts.jsph.pl/random.json?language=en"
 
         async with aiohttp.ClientSession(json_serialize=lambda x: orjson.dumps(x).decode()) as session:

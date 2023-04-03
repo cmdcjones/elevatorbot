@@ -8,7 +8,6 @@ from ElevatorBot.networking.destiny.profile import DestinyProfile
 
 
 class Website(BaseModule):
-
     system_to_name = {1: "xb", 2: "ps", 3: "pc"}
 
     @slash_command(

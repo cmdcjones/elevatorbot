@@ -16,7 +16,6 @@ class RoleMissing(BaseModule):
     )
     @default_user_option()
     async def missing(self, ctx: ElevatorInteractionContext, user: Member = None):
-
         # get the roles missing and send that
         roles = Roles(ctx=ctx, guild=ctx.guild, member=user or ctx.author)
         await roles.get_missing()
